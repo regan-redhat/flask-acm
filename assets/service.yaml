@@ -3,8 +3,8 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: flask
-  name: flask
+    app: flask-todo
+  name: flask-todo
   namespace: flask-todo
 spec:
   ports:
@@ -12,6 +12,6 @@ spec:
     protocol: TCP
     targetPort: 8080
   selector:
-    app: flask
+    app: flask-todo
   sessionAffinity: None
   type: ClusterIP

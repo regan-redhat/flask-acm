@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: flask
-  name: flask
+    app: flask-todo
+  name: flask-todo
   namespace: flask-todo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: flask
+      app: flask-todo
   template:
     metadata:
       labels:
-        app: flask
+        app: flask-todo
     spec:
       containers:
         - image: quay.io/mregan/flask-todo:test
-        name: flask
+        name: flask-todo
         ports:
         - containerPort: 8080
