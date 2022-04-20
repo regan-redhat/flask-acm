@@ -16,7 +16,7 @@ spec:
         app: flask-todo
     spec:
       containers:
-        - image: quay.io/mregan/flask-todo:test
+      - image: quay.io/mregan/flask-todo:test
         name: flask-todo
-        ports:
-        - containerPort: 8080
+      ports:
+      - containerPort: 8080
