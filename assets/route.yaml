@@ -5,7 +5,7 @@ metadata:
 spec:
   host: flask-todo-openshift-flask-todo.apps.geo.rhtps.net
   port:
-    targetPort: 8080
+    targetPort: http
   to:
     kind: Service
     name: flask-todo
