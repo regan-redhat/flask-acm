@@ -3,7 +3,7 @@ kind: Route
 metadata:
   name: flask-todo
 spec:
-  host: flask-todo-openshift-flask-todo.apps.geo.rhtps.net
+  host: flask-todo-openshift-flask-todo.apps.snocone.test-cluster.redhat.lan
   port:
     targetPort: 80
   to:
